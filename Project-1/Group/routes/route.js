@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express.app()
 
-const server= require('../gtoup/server')
+const server= require('../group/server')
 
 app.get('/', (req, res) => {}
 )
