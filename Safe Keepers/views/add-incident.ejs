@@ -1,0 +1,49 @@
+<% include partials/header.ejs %>
+<% include partials/mainNav.ejs %>
+
+
+  <main id="site-main">
+    <div class="container">
+        <div class="row">
+        <div class ="col-md-offset-3 col-md-6">
+        <title><%= title %></title>
+        <br>
+        <!--Table creation + row headings-->
+        <table class = "table table-bordered table-hover table-striped-columns table-success">
+        <tr>
+        <th class="text-center">Name</th>
+        <th class="text-center">Email</th>
+        <th class="text-center">Incident Number</th>
+        <th class="text-center">Employee ID</th>
+        <th class="text-center">Location</th>
+        <th class="text-center">Description</th>
+        <th class="text-center">Status</th>
+        <th class="text-center">Edit</th>
+        <th class="text-center">Delete</th>
+        </tr>
+        <!--For loop iterating for each entry within the database-->
+        <% for(let count=0; count<incident.length; count++){ %>
+          <tr>
+          <td class="text-center"><%= incident[count].name %></td>
+          <td class="text-center"><%= incident[count].email %></td>
+          <td class="text-center"><%= incident[count].incidentnumber %></td>
+          <td class="text-center"><%= incident[count].employeeID %></td>
+          <td class="text-center"><%= incident[count].location %></td>
+          <td class="text-center"><%= incident[count].description %></td>
+          <td class="text-center"><%= incident[count].status %></td>
+          <td class="text-center col-1">
+            <a href="/incident/edit/<%=  incident[count]._id %>"
+		        class="btn btn-primary">Edit </a>
+          </td>
+          <td class="text-center col-1">
+            <a href="/incident/edit/<%=  incident[count]._id %>"
+		        class="btn btn-danger">Delete </a>
+          </td>
+          </tr>
+        <%}%>
+        </table>
+        </div>
+        </div>
+    </div>
+  <% include partials/bottomNav.ejs %>
+  <% include partials/footer.ejs %>
