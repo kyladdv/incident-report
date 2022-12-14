@@ -1,6 +1,6 @@
 # incident-report
 
-Kyla Davy-Vass - 100545085 | Matthew Stefoff - 100787998|  Ezekiel Adekunle - 100799684 | Sean Jackson - 100296566 | Priya Shivdas - 100706871
+Kyla Davy-Vass - 100545085 | Matthew Stefoff - 100787998|  Ezekiel Adekunle - 100799684 | Priya Shivdas - 100706871
 
 INTRODUCTION
 This website was created to help in organizing incident reports completed by organizations regarding their employees. This website allows employers to document the individual's name, employee number, email, incident number, location that the incident took place, and the description of the incident that took place. This website allows individuals to create, read, delete and edit incident reports that they created. 
